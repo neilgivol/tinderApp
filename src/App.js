@@ -115,10 +115,10 @@ class App extends Component {
             <HomePage data={this.btnFetchGetUsers} />
           </Route>
           <Route path="/Search">
-            <SearchPage />
+            <SearchPage usersArr={this.state.users} />
           </Route>
           <Route path="/Match/:gender/:min/:max" component={MatchPage}>
-            <MatchPage users={this.state.users} AddFavorite={this.SendToFavorite} />
+            <MatchPage  AddFavorite={this.SendToFavorite} />
           </Route>
           <Route path="/like" >
             <LikeList faveroList={this.state.favorites} funcFavor={this.addTofavorites} />

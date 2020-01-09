@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import swal from 'sweetalert';
 import Swal from 'sweetalert2';
 
 class LikeList extends Component {
